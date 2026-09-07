@@ -1,0 +1,11 @@
+{
+  "id": "finops-oci",
+  "name": "Enterprise FinOps OCI Dashboard",
+  "category": "Gestión Financiera Cloud",
+  "description": "Enterprise FinOps OCI Dashboard es una plataforma SaaS ejecutiva alineada con el estándar FOCUS v1.0 (Open Cost and Usage Specification) diseñada para visualizar, analizar y optimizar de manera integral los costos de infraestructura en Oracle Cloud Infrastructure (OCI).\n\nLa aplicación centraliza la facturación cloud, asigna costos por aplicaciones y centros de costo corporativos, simula la tasa de consumo de contratos de Créditos Universales (UCC) y detecta automáticamente oportunidades de ahorro mensual mediante telemetría y reglas de optimización.\n\nFunciones principales:\n- Indicadores clave (KPIs) de costos MTD, mes anterior y proyección de fin de mes.\n- Integración con la especificación FOCUS v1.0 para estandarización multicloud.\n- Simulador interactivo de Burn-Rate para contratos de Créditos Universales (UCC).\n- Módulo de Oportunidades de Ahorro encontradas con simulador de reducción de costos.\n- Mapa de calor (Heatmap) de picos de consumo diario y horario (UTC).\n- Gráficos interactivos de distribución por región, top servicios y aplicaciones.\n- Tablero de control de Higiene de Etiquetas (Tag Hygiene) para recursos no asignados.\n- Diccionario Técnico-Financiero interactivo integrado para terminología FinOps y OCI.\n\nBeneficios:\n- Máxima visibilidad y transparencia sobre el gasto cloud de la organización.\n- Previene sorpresas en la facturación mediante proyecciones de consumo precisas.\n- Maximiza el aprovechamiento de créditos contractuales y evita el subconsumo.\n- Identifica de forma inmediata recursos inactivos, huérfanos o sobre-dimensionados.\n- Impulsa la cultura FinOps y la alineación estratégica entre finanzas, operaciones y negocio.",
+  "downloads": 3,
+  "rating": 5,
+  "reviews": 3,
+  "images": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"],
+  "type": "saas"
+}
