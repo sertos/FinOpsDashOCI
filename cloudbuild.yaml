@@ -22,7 +22,7 @@ steps:
     args:
       - 'run'
       - 'deploy'
-      - 'FinOpsDashOCI'
+      - 'finopsdashoci'
       - '--image=us-central1-docker.pkg.dev/solvra-demos/cloud-run-source-deploy/finopsdashoci:$COMMIT_SHA'
       - '--region=us-central1'
       - '--platform=managed'
