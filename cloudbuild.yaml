@@ -10,11 +10,11 @@ steps:
         export DOCKER_BUILDKIT=1
         docker build \
           --build-arg VITE_GEMINI_API_KEY=$_VITE_GEMINI_API_KEY \
-          -t us-central1-docker.pkg.dev/solvra-demos/cloud-run-source-deploy/FinOpsDashOCI:$$COMMIT_SHA .
+          -t us-central1-docker.pkg.dev/solvra-demos/cloud-run-source-deploy/finopsdashoci:$$COMMIT_SHA .
 
   # 2. Subir imagen
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'us-central1-docker.pkg.dev/solvra-demos/cloud-run-source-deploy/FinOpsDashOCI:$COMMIT_SHA']
+    args: ['push', 'us-central1-docker.pkg.dev/solvra-demos/cloud-run-source-deploy/finopsdashoci:$COMMIT_SHA']
 
   # 3. Desplegar
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
@@ -23,7 +23,7 @@ steps:
       - 'run'
       - 'deploy'
       - 'FinOpsDashOCI'
-      - '--image=us-central1-docker.pkg.dev/solvra-demos/cloud-run-source-deploy/FinOpsDashOCI:$COMMIT_SHA'
+      - '--image=us-central1-docker.pkg.dev/solvra-demos/cloud-run-source-deploy/finopsdashoci:$COMMIT_SHA'
       - '--region=us-central1'
       - '--platform=managed'
       - '--allow-unauthenticated'
@@ -32,4 +32,4 @@ options:
   logging: CLOUD_LOGGING_ONLY
 
 images:
-  - 'us-central1-docker.pkg.dev/solvra-demos/cloud-run-source-deploy/FinOpsDashOCI:$COMMIT_SHA'
+  - 'us-central1-docker.pkg.dev/solvra-demos/cloud-run-source-deploy/finopsdashoci:$COMMIT_SHA'
